@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F300BCD4"
+    tools:context=".User.HomeActivity">
+
+    <ImageView
+        android:id="@+id/viewAllMed"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="84dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/allmed" />
+
+    <ImageView
+        android:id="@+id/viewYourMed"
+        android:layout_width="121dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="276dp"
+        app:layout_constraintStart_toEndOf="@+id/viewAllMed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/alert" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="132dp"
+        android:text="คลังยาทั้งหมด"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/viewAllMed"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="44dp"
+        android:text="คลังยาของคุณ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/viewYourMed"
+        app:layout_constraintTop_toBottomOf="@+id/viewAllMed" />
+
+</android.support.constraint.ConstraintLayout>
